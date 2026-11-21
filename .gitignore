@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment (rebuilt from
+# requirements.txt, see README)
+venv/
+
+# Local answer model (about 1 GB, see
+# README for where to download it)
+models/

@@ -1,0 +1,40 @@
+Glossary
+=========
+
+tf-idf
+
+tf-idf stands for term frequency-inverse
+document frequency. It scores a word by
+how often it appears in one document,
+compared with how often it appears across
+all documents. A word that appears a lot in
+one document but rarely anywhere else gets
+a high score. A word that appears almost
+everywhere, like "the", gets a low score.
+Lecture 6 uses this idea to turn text into
+numbers the AI can work with, and this
+chatbot's own retriever uses it too.
+
+Cross-entropy
+
+Cross-entropy is the loss function a neural
+network uses when it classifies things. It
+measures how far the network's predicted
+probabilities are from the right answer. A
+perfect prediction gives a loss near zero,
+and a confident wrong prediction gives a
+large loss. Lecture 5 uses
+binary_crossentropy for two-way choices and
+categorical_crossentropy for many-way
+choices.
+
+Word embedding
+
+A word embedding is a distributed
+representation of a word as a short vector
+of numbers. Words with similar meanings end
+up with similar vectors, so the AI can tell
+that "book" is close to "essay" but far from
+"car". Lecture 6 builds embeddings with
+word2vec, a neural network that predicts a
+word from the words around it.
